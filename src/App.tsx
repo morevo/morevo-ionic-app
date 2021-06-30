@@ -100,7 +100,7 @@ const App: React.FC = () => {
         <IonItem className="ion-about ion-no-padding">
           <IonAvatar className="ion-avatar-man" slot="start">
             <IonImg className="ion-img-man">
-              <img src="images/man-removebg-preview.png" alt="" />
+              <img src="./images/man-removebg-preview.png" alt="" />
             </IonImg>
           </IonAvatar>
           <IonLabel>
