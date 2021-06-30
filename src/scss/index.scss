@@ -1,0 +1,290 @@
+// sass --watch .\scss\index.scss .\css\index.css - Put styles in css folder
+
+/* Vars */
+$font-size: 16px;
+$main-color: #33bde4;
+
+:root {
+  --ion-font-family: "Montserrat";
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+  position: relative;
+  top: 4.5rem;
+}
+
+.header__title {
+  position: absolute;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.item__text {
+text-align: center;
+  font-size: $font-size;
+  line-height: 24px;
+
+  width: 117px;
+  height: 60px;
+  left: 213px;
+  top: 152px;
+}
+
+.text__delay__style {
+  display: block;
+  margin-top: 0.5rem;
+  color: black;
+}
+
+.ion-about {
+  position: absolute;
+  width: 100%;
+  height: 144px;
+  left: 45px;
+  top: 80px;
+}
+
+.ion-avatar-man {
+  width: 144px;
+  height: 144px;
+}
+
+.ion-img-man {
+  width: 144px;
+  height: 144px;
+  left: 45px;
+  top: 120px;
+  border-radius: 4px;
+}
+
+.item__text {
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: 24px;
+}
+
+.text__delay__style {
+  font-weight: 600;
+}
+
+.possible__date {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 230px;
+  left: $font-size;
+  --border-style: none;
+}
+
+.possible__text {
+  width: 170px;
+}
+
+.icons {
+  margin-left: 5rem;
+  --border-style: none;
+
+  &__both {
+    padding: 0.3rem;
+  }
+
+  &__first {
+    transition: all 0.2s ease;
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  &__second {
+    transition: all 0.2s ease;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+.item-inner {
+  --border-style: none;
+}
+
+.date__item {
+  background: $main-color;
+}
+
+.main__inner {
+  width: 359px;
+  height: 92px;
+  top: 230px;
+  --border-style: none;
+}
+
+.date__button {
+  background: #f0fbff;
+  width: 86px;
+  height: 86px;
+  border: 1px solid $main-color;
+  border-radius: 6px;
+  font-size: $font-size;
+  margin: 0 0.3rem;
+  background: #ffffff;
+  border: 1px solid #edeff2;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  --border-style: none;
+
+  &:hover .date__button-possible-style {
+    color: $main-color;
+  }
+
+  &:hover .date__free-time {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: $main-color;
+  }
+
+  &:hover {
+    background: #f0fbff;
+    border: 1px solid $main-color;
+    color: $main-color;
+  }
+
+  &-number {
+    display: block;
+    margin-top: 0.4rem;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    --border-style: none;
+  }
+
+  &-free {
+    display: flex;
+    top: 310px;
+    --border-style: none;
+
+    &-title {
+      position: absolute;
+      top: 220px;
+      --border-style: none;
+    }
+  }
+}
+
+.free__date {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 240px;
+  left: $font-size;
+  --border-style: none;
+}
+
+.free__date .date__button {
+  background: none;
+  border: none;
+  --border-style: none;
+}
+
+.date__free-time {
+  transition: all 0.3s ease;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.dates__state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+
+  position: absolute;
+  width: 343px;
+  height: 156px;
+  left: $font-size;
+  top: 540px;
+
+  background: #ffffff;
+  border: 1px solid #edeff2;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+
+  --border-style: none;
+  
+}
+
+.item {
+  --border-style: none;
+
+}
+
+.date__state {
+ padding: 0 1.5rem;
+ position: relative;
+ top: 0;
+ --border-style: none;
+ &:first-child {
+  border-right: 1px solid gray;
+ }
+
+ &:last-child {
+   border-left: 1px solid gray;
+ }
+}
+
+
+.date__button-free {
+  top: 240px;
+}
+
+.date__state-text {
+  text-align: center;
+}
+
+.dates__state-common {
+  font-size: $font-size;
+  color: #5B5B5B;
+}
+
+.date__state-style{
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.date__state-button {
+  position: absolute;
+}
+
+.date__state-button {
+  position: absolute;
+  top: 700px;
+  left: 1.6rem;
+}
